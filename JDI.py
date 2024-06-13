@@ -13,13 +13,13 @@ if Number not in List and Count == 0:
 
 """MY CODE TRY 1"""
 
-SecondList = [100, 10, 55, 92, 33, 45, 66, 99, 11, 23, 44, 45, 45]
+SecondList = [100, 10, 55, 92, 33, 45, 66, 99, 11, 23, 44, 45, 45 ,45, 45, 45,]
 """Countings = SecondList.count(45)
 print(Countings) Testing Count Method"""
 
-def Countings(List, SearchValue):
-    FoundTimes = List.count(SearchValue)
-    return (F"""The List {List} contains the value {SearchValue} {FoundTimes} times""")
+def Countings(Listing: list, SearchValue: int) -> (__name__):
+    FoundTimes = Listing.count(SearchValue)
+    return (F"""The List {Listing} contains the value {SearchValue} {FoundTimes} times""")
 
 X = Countings(SecondList, 45)
 print(X)
