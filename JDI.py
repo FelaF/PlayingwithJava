@@ -23,3 +23,12 @@ def Countings(Listing: list, SearchValue: int) -> (__name__):
 
 X = Countings(SecondList, 45)
 print(X)
+
+
+def Searcher(Throughput:list, Searchee:int) -> int:
+    TimesFound = Throughput.count(Searchee)
+    print (F"""The List {Throughput.__str__()} contains the value {Searchee} {TimesFound} times""")
+    return Throughput
+
+if __name__ == '__main__':
+    Searcher(SecondList, 45)

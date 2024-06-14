@@ -2,19 +2,26 @@
     <head>
         <meta charset="UTF-8">
         <title>Playing with JS</title>
+        <style>
+            button {
+                height: 120px;
+                width: 120px;
+            }
+        </style>
 
     </head>
     <body>
+        <button>PRESS THIS</button>
+        <div id="greeting"></div>
         <script>
-            let name = "John";
-            let x = `Hello. ${name}!`;
-            let y = `the result is ${1 + 2}`;
-            let nameFieldChecked = true;
-            let ageFieldChecked = false;
-            let age = "the revolution will not be televised";
-            let ages = age
-            
-            console.log(x, y, nameFieldChecked, ageFieldChecked, ages);
+            const button = document.querySelector("button");
+
+            function greet(){
+                const name = prompt("What is your name?");
+                const greetings = document.querySelector("#greeting");
+                greetings.textContent = `Hello ${name}, nice to meet you!`;
+            }
+            button.addEventListener("click", greet);
         </script>
     </body>
 </html>

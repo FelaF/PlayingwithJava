@@ -16,6 +16,6 @@ def ClubbingFunction() -> None:
 
 if __name__ == '__main__':
     ClubbingFunction()
-    print(__name__)
+    print('__main__')
 
     
