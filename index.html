@@ -22,6 +22,12 @@
                 greetings.textContent = `Hello ${name}, nice to meet you!`;
             }
             button.addEventListener("click", greet);
+            let text = "Please exit to the left of the left hall, please";
+            let newRightText = text.replace(/left/g, "right");
+            let RightText = text.replace(/P/g ,"p");
+            let Rude = RightText.replace(/please/g, "Motherfuckers");
+            console.log(newRightText, text, Rude);
+
         </script>
     </body>
 </html>

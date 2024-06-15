@@ -9,7 +9,7 @@ def enter_club(name: str, age: int, has_id:bool) -> None:
         print('You may not enter the club.')
 
 
-def ClubbingFunction() -> None:
+def ClubbingFunction():
     enter_club('Jimmy', 29, has_id=False)
     enter_club('James', 22, has_id=True)
     enter_club('bob' , 21, has_id=True)
@@ -17,5 +17,7 @@ def ClubbingFunction() -> None:
 if __name__ == '__main__':
     ClubbingFunction()
     print('__main__')
+
+
 
     
