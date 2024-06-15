@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forecasting the Weather</title>
+</head>
+<body>
+    <button>Temperature</button>
+    <label for="weather">Select the weather type today:</label>
+    <select id="weather">
+        <option value="">--Make a choice--</option>
+        <option value="sunny">Sunny</option>
+        <option value="rainy">Raining</option>
+        <option value="snowing">Snowing</option>
+        <option value="overcast">Overcast</option>
+    </select>
+    <p></p>
+    <script>
+        const select = document.querySelector("select");
+        const para = document.querySelector("p");
+        select.addEventListener("change",setWeather)
+        
+        const button = document.querySelector("button");
+
+    function getTemperature(){
+        let temp = Number(prompt("What is the temperature outside?"));
+        console.log(typeof temp, `${temp}`)
+            
+    }
+    button.addEventListener("click", getTemperature);
+        
+        function setWeather(){
+            const choice = select.value;
+
+            switch(choice){
+                case "sunny":{
+                    para.textContent = 
+                    `It is nice and sunny today.`;
+                    break ;
+                }
+                case "rainy":{
+                    para.textContent = 
+                    `A bit wet and sad outside.`;
+                    break;
+                }
+                case "snowing": {
+                    para.textContent = `
+                    Get your coats and mittens because it's snowing.`;
+                    break;
+                }
+                case "overcast": {
+                    para.textContent = `It might be raining soon, you might want a raincoat.`;
+                    break;
+                }
+                default:{
+                   para.textContent = ``
+                }
+            }
+        }
+    </script>
+    
+</body>
+</html>
