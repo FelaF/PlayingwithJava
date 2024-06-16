@@ -6,7 +6,7 @@ def connect() -> None:
 
 
 def greet() -> None:
-    print('Hello World!')
+    return('Hello World!')
 
 def bye() -> None:
     print('Bye World!')
