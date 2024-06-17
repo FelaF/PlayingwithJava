@@ -24,6 +24,9 @@ class Garage:
         if len(self.contains) < self.size: 
             self.contains.append(Car)
             return True
+        else:
+            return (f"It doesn't look like this car will
+            fit because the garage size is {self.size}")
         return False
 
     def get_list_of_Cars(self):
