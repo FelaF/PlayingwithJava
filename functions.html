@@ -50,6 +50,15 @@
         console.log(lastletter('ded'))
         console.log(sayHi);
         console.log(pleaser)
+        function ask(question, yes, no) {
+            if (confirm(question)) yes()
+            else no();
+        }
+        function showPersisting(){
+            console.log("No? Continuing the procedure.");
+        }
+    ask("Are you sure you want to quit", function(){console.log("Quitting now OK...")}, 
+    function() {console.log("No? Continuing the procedure.")});
     </script>
 </body>
 </html>
