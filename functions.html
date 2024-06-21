@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions with TOP</title>
+</head>
+<body>
+    <input id="textBox" type="text" />
+    <div id="output"></div>
+    <script>
+        const HtmlBox = document.querySelector('#textBox');
+        const output = document.querySelector('#output');
+        textBox.addEventListener("keydown", (event) => {
+            output.textContent = `You pressed "${event.key}".`
+        });
+        function addSeven(number){
+            number += 7
+            return number
+        }
+        function multiplicity(a, b){
+            return a * b
+        }
+
+        function capitalize(text=String){
+            if (text.length >= 1);
+                textFirstPart = text[0].toUpperCase();
+                textSecondPart = text.slice(1, text.length)
+                textFinal = textFirstPart + textSecondPart
+            return textFinal
+                }
+
+        function lastletter(text=String){
+            Last = text.length - 1
+            return text[Last]
+        }
+        function sayHi(){
+            console.log('Hello');
+        }
+
+
+        let sayBye = function(){
+            console.log('Goodbye')
+        }
+        let pleaser = sayBye;
+        pleaser()
+        console.log(capitalize('benny'))
+        console.log(addSeven(10))
+        console.log(multiplicity(10, 2000))
+        console.log(lastletter('ded'))
+        console.log(sayHi);
+        console.log(pleaser)
+    </script>
+</body>
+</html>
